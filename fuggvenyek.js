@@ -1,9 +1,9 @@
 export function tablazatLetrehoz(lista){
     let szoveg = `<table class="border border-dark container-fluid text-center" style="max-width: 700px">
     <tr>
-      <th class="border border-dark">Név</th>
-      <th class="border border-dark">Kor</th>
-      <th class="border border-dark">Nem</th>
+      <th id="nevId" class="border border-dark">Név</th>
+      <th id="korId" class="border border-dark">Kor</th>
+      <th id="nemId" class="border border-dark">Nem</th>
     </tr>`;
     lista.forEach((element,index) => {
         szoveg += `<tr class="border border-dark">
@@ -19,14 +19,6 @@ export function tablazatLetrehoz(lista){
 export function megjelenit(text) {
     let adatok = $(".adatok");
     adatok.html(text);
-}
-
-function rendez(lista) {
-    
-}
-
-function szures(lista, keresoSzoveg) {
-    
 }
 
 function sorBeszur() {
